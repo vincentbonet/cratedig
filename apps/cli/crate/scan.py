@@ -1,7 +1,11 @@
 from pathlib import Path
+from crate.features import detect_bpm
 import soundfile as sf
 
 AUDIO_EXTS = {".wav", ".aiff", ".flac", ".mp3"}
+
+bpm, conf = detect_bpm("file_path")
+print(f"BPM: {bpm}, Confidence: {conf}")
 
 def scan_folder(path):
     rows = []

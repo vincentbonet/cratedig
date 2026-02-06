@@ -1,4 +1,4 @@
-import click
+import click # Package for building command line interfaces
 from crate.scan import scan_folder
 from crate.export import export_csv
 
