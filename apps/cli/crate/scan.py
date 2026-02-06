@@ -21,12 +21,12 @@ def scan_folder(path):
 
         rows.append({
             "filename": file.name,
-        "path": str(file),
-        "duration_sec": round(info.duration, 3),
-        "samplerate": info.samplerate,
-        "channels": info.channels,
-        "bpm": bpm,
-        "bpm_confidence": conf,
+            "path": str(file),
+            "duration_sec": round(info.duration, 3),
+            "samplerate": info.samplerate,
+            "channels": info.channels,
+            "bpm": bpm,
+            "bpm_confidence": conf,
         })
 
     return rows

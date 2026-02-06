@@ -98,4 +98,5 @@ data/*
 __pycache__/
 .dist/
 build/
+examples/*.wav
 
