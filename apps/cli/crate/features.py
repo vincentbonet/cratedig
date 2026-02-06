@@ -9,3 +9,10 @@ def detect_bpm(file_path):
     duration_sec = len(y) / sr 
     if duration_sec < 1.0: 
         return None, 0.0 #Base case, too short to analyze
+    
+
+    # TODO: onset (audio peaks) detection 
+    # TODO: estimate tempo 
+    # TODO: confidence calculation 
+
+    return None, 0.0 # Placeholder return values
